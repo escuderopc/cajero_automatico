@@ -43,7 +43,10 @@
          <div class="row">
             <div class="col-xl-12 text-center">
                 <h1>¡Bienvenido a tu banda en linea Bitcoin Neo!</h1>
-            </div>   
+                <br>
+                <h1>Hola, Carina.</h1>
+                <br>
+            </div>  
             <div class="col">
               <h1 class="text-center pt-5 text-white">Opciones disponibles en tu cuenta bitcoin neo</h1>
               <div class="card my-5 rounded-3">
@@ -51,18 +54,21 @@
                   <form>
                     <div class="row">
                       <div class="col-xl-4 col-sm-12">
-                        <button type="submit" class="mb-3 btn btn-outline-info tam w-100"><h2>Consultar saldo</h2></button>
+                        <button onclick="consulta()"  class="mb-3 btn btn-outline-info tam w-100"><h2>Consultar saldo</h2></button>
                       </div>
                       <div class="col-xl-4 col-sm-12">
-                        <button type="submit" class="mb-3 btn btn-outline-success tam w-100"><h2>Ingresar saldo</h2></button>
+                        <button onclick="ingresa()"  class="mb-3 btn btn-outline-success tam w-100"><h2>Ingresar saldo</h2></button>
                       </div>
                       <div class="col-xl-4 col-sm-12">
-                        <button type="submit" class="mb-3 btn btn-outline-danger tam w-100"><h2>Retirar monto</h2></button>
+                        <button onclick="retirar()" class="mb-3 btn btn-outline-danger tam w-100"><h2>Retirar monto</h2></button>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
+            </div>
+            <div class="col-xl-12 col-sm-12 card my-5 bg-dark">
+                <img class="img-doge" src="./img/dogecoin.jpg" alt="dogecoin">
             </div>
           </div>
 
@@ -71,7 +77,7 @@
     <script src="./js/app.js"></script>
     <script src="./js/db.js"></script>
 </body>
-<footer class="container-fluid bg-white text-dark text-center">
-    <p>Kata JavaScript 2022-DEVF</p>
+<footer class="container-fluid bg-secondary text-dark text-center">
+    <h3>Kata JavaScript 2022-DEVF</h3>
 </footer>
 </html>
