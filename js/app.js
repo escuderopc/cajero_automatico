@@ -20,23 +20,31 @@ function consulta(){
 //Ingresa cuenta
 function ingresa(){
 
+    alert("Saldo actual: "+saldo)
     if(saldo>=990){
-        alert("El limite de dinero ingresado no puede ser mayor a 990")
+        alert("El limite de dinero en su cuenta no puede ser mayor a 990")
     }else{
-        let actaSaldo = prompt("¿Cuanto desea ingrear a su cuenta?")
-        cuenta.textContent = saldo + actaSaldo
+        let actaSaldo = Number(prompt("¿Cuanto desea ingrear a su cuenta?"))
+        if(actaSaldo+saldo>990){
+            alert("El valor ingresado es mayor al limite de su cuenta")   
+        }else{
+            let total = saldo + actaSaldo
+            alert("Saldo actual: "+total)   
+        }
+
     }
     
 }
 //Retirar de cuenta
 function retirar(){
 alert("Saldo actual: "+saldo)
-let retiro = prompt("¿Cuanto desea retirar?")
-if(retiro>=saldo-10){
+let retiro = Number(prompt("¿Cuanto desea retirar?"))
+if(retiro>saldo-10){
     alert("La cantidad ingresada no puede ser retirada, ya que la cuenta no cuenta con fondos suficientes")
 
 }else{
-    alert("El retiro ha sido un exito \n su saldo actual es: "+saldo-retiro)
+    let actSaldo = Number(saldo-retiro)
+    alert("El retiro ha sido un exito \n su saldo actual es: "+ actSaldo)
 
 }
 
