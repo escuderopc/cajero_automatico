@@ -26,7 +26,7 @@ function ingresa(){
     }else{
         let actaSaldo = Number(prompt("¿Cuanto desea ingrear a su cuenta?"))
         if(actaSaldo+saldo>990){
-            alert("El valor ingresado es mayor al limite de su cuenta")   
+            alert("El valor ingresado es mayor al limite de su cuenta ingrese un valor menos a 990")   
         }else{
             let total = saldo + actaSaldo
             alert("Saldo actual: "+total)   
@@ -40,7 +40,7 @@ function retirar(){
 alert("Saldo actual: "+saldo)
 let retiro = Number(prompt("¿Cuanto desea retirar?"))
 if(retiro>saldo-10){
-    alert("La cantidad ingresada no puede ser retirada, ya que la cuenta no cuenta con fondos suficientes")
+    alert("La cantidad ingresada no puede ser retirada, ya que la cuenta no cuenta con fondos suficientes, la cuenta debe tener minimo $10")
 
 }else{
     let actSaldo = Number(saldo-retiro)
