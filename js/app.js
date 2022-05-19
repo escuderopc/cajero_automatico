@@ -26,7 +26,7 @@ function ingresa(){
     }else{
         let actaSaldo = Number(prompt("¿Cuanto desea ingrear a su cuenta?"))
         if(actaSaldo+saldo>990){
-            alert("El valor ingresado es mayor al limite de su cuenta ingrese un valor menos a 990")   
+            alert("El valor ingresado es mayor al limite de su cuenta ingrese un valor menor a 990")   
         }else{
             let total = saldo + actaSaldo
             alert("Saldo actual: "+total)   
